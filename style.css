@@ -1,0 +1,141 @@
+/* Global Styling */
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: #517df5;
+    --gray-text-color: #777777;
+    --black-text-color: #1D1D1F;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 17%;
+}
+
+@media (max-width:1600px) {
+    section{
+        padding: 20px 3%;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navbar Design*/
+
+.nav-logo-wrapper{
+    padding-top: 4.5px;
+}
+
+.nav-section{
+    padding-top: 15px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-icon{
+    display: none;
+    width: 55px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsla(0, 0%, 53.3%, 0.15);
+}
+
+.menu-icon i{
+    font-size: 18px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2.25rem
+
+}
+
+.nav-options li{
+    list-style: none; 
+    padding: 0 16px;
+    
+}
+
+.nav-options li a{
+    text-decoration: none;
+    color: var(--black-text-color);
+    transition: 0.3s ease
+}  
+
+.nav-options li a:hover{
+    color: var(--primary-color);
+}
+
+
+.nav-button{
+    position: relative;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 54px 12px 32px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.nav-button span{
+    font-size: 17px;
+    color: #fff;
+    z-index: 1;
+}
+
+.nav-button:hover span{
+    color: var(--black-text-color);
+    transition: .3s ease;
+}
+
+.arrow-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    top: 2.5px;
+    right: 2px;
+    transition: 0.3s ease;
+}
+.nav-button:hover .arrow-btn{
+    width: 97%;
+}
+
+.arrow-btn i{
+    color: var(--black-text-color);
+    font-size: 1.4rem;
+    position: absolute;
+    right: 8px;
+}
