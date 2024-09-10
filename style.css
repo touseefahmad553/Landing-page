@@ -146,7 +146,7 @@ nav{
 /* Hero Section */
 
 .hero-background{
-    background: url(Images/hero\ background\ img.png)no-repeat center center/cover;
+    background: url(Images/hero-background.png)no-repeat center center/cover;
     width: 100%;
     height: 680px;
     display: flex;
@@ -245,7 +245,7 @@ nav{
   }
 
 
-/* Responsive Design */
+/* Responsive Hero Section */
 
 @media (max-width:990px) {
     .navbar{
@@ -317,7 +317,7 @@ nav{
 }
 
 .feature-background {
-    background: url(Images/Feature\ Img.png) no-repeat center center/cover;
+    background: url(Images/Feature-Img.png) no-repeat center center/cover;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -359,7 +359,6 @@ nav{
 
 .paragraph {
     font-size: 16px;
-    /* line-height: 1.6; */
 }
 
 .true-sign {
@@ -369,22 +368,22 @@ nav{
 }
 
 .ture-1st-p {
-    background: url(Images/true\ sign.png) no-repeat center center/cover;
+    background: url(Images/true-sign.png) no-repeat center center/cover;
 }
 
 .ture-2nd-p {
-    background: url(Images/true\ sign.png) no-repeat center center/cover; 
+    background: url(Images/true-sign.png) no-repeat center center/cover; 
 }
 
 .ture-3rd-p {
-    background: url(Images/true\ sign.png) no-repeat center center/cover;
+    background: url(Images/true-sign.png) no-repeat center center/cover;
 }
 
 
 /* Feature Section Part 2*/
 
 .feature-background-2{
-    background: url(Images/Feature\ img\ 2.png) no-repeat center center/cover;
+    background: url(Images/Feature-img-2.png) no-repeat center center/cover;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -399,7 +398,9 @@ nav{
     padding-bottom: 40px;
 }
 
-/* Responsive Design */
+/* Responsive Feature Section 1 */
+
+
 @media (max-width:1770px) {
     .feature-container-1{
         display: flex;
@@ -482,7 +483,7 @@ nav{
 }
 
 
-/* Reponsive for Feature section 2 */
+/* Reponsive Feature Section 2 */
 
 @media (max-width:1770px) {
     .feature-container-2{
@@ -513,3 +514,123 @@ nav{
         background-position: center; 
     }
 }
+
+
+/* Profile Section */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 26px;
+    height: 462px;
+
+}
+
+.logo{
+    width: 180px;
+    height: 48px;
+}
+
+.logo-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.logo-text{
+    font-size: 20px;
+    color: white;
+    max-width: 512px;
+    letter-spacing: .8px
+}
+
+.profile-image{
+    width: 290px;
+    height: 290px;
+}
+
+.profile-content div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ 
+}
+
+.profile-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cto-name{
+    color: white;
+    font-size: 18px;
+}
+
+.cto-position{
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* Responsive Profile Section */
+
+@media (max-width:1200px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 538.73px;
+        padding: 0 10px;
+    }
+    .profile-image{
+        width: 180px;
+        height: 190px;
+    }
+    .profile-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.7rem;
+    }
+    .logo-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+    .logo-text {
+        font-size: 20px;
+        color: white;
+        max-width: 355px;
+        letter-spacing: 0.8px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:440px) {
+
+    .logo{
+        width: 130px;
+        height: 40px;
+    } 
+
+    .logo-text {
+        font-size: 15px;
+    }
+
+}
+
