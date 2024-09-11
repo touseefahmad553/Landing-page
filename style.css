@@ -634,3 +634,282 @@ nav{
 
 }
 
+/* Student Pricing Section */
+
+.package{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.package-title{
+    font-size: 76.8px;
+    color: var(--black-text-color);
+    padding-bottom:  3.54375rem;
+}
+
+.package-text{
+    font-size: 18px;
+    color: var(--black-text-color);
+    font-weight: bold;
+}
+
+.package-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.student-pricing{
+    width: 49%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: left;
+    gap: 10px;
+    padding: 80px 60px 60px 60px;
+    border-radius: 26px;
+    box-shadow: 0 6px 50px 0 rgba(14, 25, 54, 0.06);
+    background-color: #fff;
+}
+
+.plan-wrapper{
+    display: flex;
+    flex-direction: row; 
+    padding:0.1rem 0 0.9rem;
+}
+
+
+.student-type{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--black-text-color);
+    letter-spacing: 1px;
+}
+
+.student-plan-price{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-color);
+}
+
+.student-month{
+    font-size: 16px;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left:0.125rem;
+    position: relative;
+    bottom: 0.1875rem;
+}
+.student-package-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding-bottom: 8.1875rem;
+}
+
+.package-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    gap: 1rem;
+}
+
+
+.info-true-sign{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+ 
+.student-plan-info{
+    font-size: 15px;
+    color: var(--gray-text-color);
+}
+
+.student-plan-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100px;
+    border: solid 1px var(--primary-color);
+    cursor: pointer;
+    overflow: hidden;
+    padding: 27px 0
+}
+
+.student-plan-btn-text{
+    font-size: 12px;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    z-index: 1;
+    font-weight: bold;
+    transition: ease .4s;
+}
+
+.student-plan-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--primary-color);
+    transition: ease .4s;
+}
+
+.student-plan-btn:hover::before{
+    width: 100%;
+    background: var(--primary-color);
+}
+
+
+.student-plan-btn:hover .student-plan-btn-text{
+    color: #fff;
+}
+
+/* Premium Package Section*/
+
+.premium-pricing{
+    width: 49%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: left;
+    gap: 10px;
+    padding: 80px 60px 60px 60px;
+    border-radius: 26px;
+    box-shadow: 0 6px 50px 0 rgba(14, 25, 54, 0.06);
+    background-color: var(--primary-color);
+}
+
+.premium-package-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding-bottom: 0.9375rem;
+}
+
+.premium-plan-price{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+}
+
+.premium-month{
+    font-size: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left:0.125rem;
+    position: relative;
+    bottom: 0.1875rem;
+}
+
+
+
+.premium-type{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.premium-plan-info{
+    font-size: 15px;
+    color: white;
+}
+
+.premium-plan-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100px;
+    border: solid 1px white;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 27px 0;
+    background-color: var(--primary-color);
+    transition: background-color ease 0.4s;
+}
+
+.premium-plan-btn-text {
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1px;
+    z-index: 1;
+    font-weight: bold;
+    transition: color ease 0.4s;
+}
+
+.premium-plan-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: width ease 0.4s;
+}
+
+.premium-plan-btn:hover::before {
+    width: 100%;
+}
+
+.premium-plan-btn:hover {
+    background-color: var(--primary-color); 
+}
+
+.premium-plan-btn:hover .premium-plan-btn-text {
+    color: var(--primary-color); 
+}
+
+/* Responsive Design For Package Section */
+
+@media (max-width: 1200px) {
+    .package-main-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625rem; 
+    }
+
+    .premium-pricing, .student-pricing {
+        width: 100%; 
+    }
+    .package-title{
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 550px) {
+    .package-title{
+        font-size: 42px;
+    }
+    .student-pricing {
+        padding: 60px 20px 40px 20px;
+    }
+    .premium-pricing {
+        padding: 60px 20px 40px 20px;
+    }
+    .student-plan-btn{
+        padding: 20px 0;
+    }
+    .premium-plan-btn{
+        padding: 20px 0;
+    }
+}
