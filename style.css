@@ -294,7 +294,7 @@ nav{
     
     }
     .hero-title{
-        font-size: 40px;
+        font-size: 32px;
         line-height: 46px;
         width: 248px;
     }
@@ -470,7 +470,7 @@ nav{
         background-position: center; 
     }
     .feature-title{
-        font-size:42px;
+        font-size:32px;
     }
 
     .feature-text{
@@ -514,7 +514,6 @@ nav{
         background-position: center; 
     }
 }
-
 
 /* Profile Section */
 
@@ -634,7 +633,7 @@ nav{
 
 }
 
-/* Student Pricing Section */
+/* Student Package Section */
 
 .package{
    display: flex;
@@ -819,7 +818,6 @@ nav{
 }
 
 
-
 .premium-type{
     font-size: 14px;
     font-weight: bold;
@@ -891,14 +889,20 @@ nav{
     .premium-pricing, .student-pricing {
         width: 100%; 
     }
-    .package-title{
+}
+
+@media (max-width: 768px) {
+     .package-title{
         font-size: 48px;
-    }
+    } 
 }
 
 @media (max-width: 550px) {
     .package-title{
-        font-size: 42px;
+        font-size: 32px;
+    }
+    .package-text {
+        font-size: 12px;
     }
     .student-pricing {
         padding: 60px 20px 40px 20px;
@@ -913,3 +917,152 @@ nav{
         padding: 20px 0;
     }
 }
+
+@media (max-width: 380px) {
+    .package-title{
+        font-size: 26px;
+    }
+}
+
+/* Client Section */
+
+.client-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-text{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black-text-color);
+    padding-bottom: 1.125rem;
+}
+
+.client-heading{
+    font-size: 76.8px;
+    font-weight: bold;
+    width: 694px;
+    color: var(--black-text-color);
+    padding-bottom: 3.5rem;
+    line-height: 1.1;
+}
+
+.img-btn-wrapper{
+    width: 100%;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.map-image{
+    width: 100%;
+}
+
+.client-btn-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.client-button{
+    width: 99%;
+    position: relative;
+    background: var(--primary-color);
+    color: white;
+    padding: 28px 41.3px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.client-button span{
+    font-size: 20px;
+    color: #fff;
+    z-index: 1;
+}
+
+.client-button:hover span{
+    color: var(--black-text-color);
+    transition: .3s ease;
+}
+
+.client-btn-a{
+    width: 100%;
+}
+
+.client-arrow-btn{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    right: 5px;
+    transition: 0.3s ease;
+    width: 66px;
+    height: 85%;
+    border-radius: 50px;
+}
+.client-button:hover .client-arrow-btn{
+    width: 98%;
+}
+
+.client-arrow-btn i{
+    color: var(--black-text-color);
+    font-size: 2.8rem;
+    position: absolute;
+    right: 8px;
+}
+
+/* Responsive Client Section */
+
+@media (max-width: 1200px) {
+    .client-btn-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .client-heading{
+        font-size: 48px;
+        width: 440px;
+    }
+}
+
+@media (max-width: 550px) {
+    .client-heading{
+        font-size: 32px;
+        width: 290px;
+    }
+
+    .client-text {
+        font-size: 12px;
+    }
+
+    .client-button{
+        padding: 22px 25px ;
+    }
+
+    .client-arrow-btn{
+        width: 59px;
+        height: 85%;
+    }
+
+    .client-arrow-btn i{
+        font-size: 2.4rem;
+    }
+
+}
+
+
+
+
